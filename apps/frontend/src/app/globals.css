@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -26,4 +25,32 @@ body {
     @apply mx-auto max-w-7xl px-4;
   }
 
+  .botao {
+    @apply flex justify-center items-center;
+    @apply gap-2 rounded-md px-9 h-9;
+    @apply text-sm font-semibold;
+  }
+
+  .botao.azul {
+    @apply bg-blue-500 text-white;
+  }
+
+  .botao.azul:hover {
+    @apply bg-slate-600;
+  }
+
+  .botao.vermelho {
+    @apply bg-red-500 text-white;
+  }
+
+  .botao.vermelho:hover {
+    @apply bg-red-600;
+  }
+  .botao.verde {
+    @apply bg-green-500 text-white;
+  }
+
+  .botao.verde:hover {
+    @apply bg-green-600;
+  }
 }

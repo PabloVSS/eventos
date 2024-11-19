@@ -5,7 +5,7 @@ export interface LayoutProps {
   className?: string;
 }
 
-export default function Layout(props: LayoutProps) {
+export default function LayoutPage(props: LayoutProps) {
   return (
     <div className="
       flex flex-col items-center py-10 min-h-screen
@@ -15,7 +15,7 @@ export default function Layout(props: LayoutProps) {
       <Logo />
       <main className={`
         flex-1 flex flex-col justify-center py-10 
-        container ${props.className}  bg-red-500
+        container ${props.className} 
       `}
       >
         {props.children}</main>

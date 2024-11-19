@@ -1,5 +1,5 @@
 export default class Password {
-  static create(capacity: number = 15): string {
+  static new(capacity: number = 15): string {
     const numbers = 1234567890;
     const letters = "abcdesfghijklmnopqrstuvxyz";
     const uppercaseLetters = letters.toUpperCase();
